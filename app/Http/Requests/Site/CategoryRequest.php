@@ -16,7 +16,7 @@ class CategoryRequest extends JsonFormRequest
     {
         return [
             'name' => ['required'],
-            'notes' => ['required', 'max:2000'],
+            'notes' => ['nullable', 'max:2000'],
             'active' => ['required', Rule::in(['1', '0'])],
         ];
     }
