@@ -2,7 +2,7 @@
 
 Coursaty is a web application to enable users to search through courses and categories, This project provides some features such as:
 
--   [API Endpoints for users to search for available courses](https://documenter.getpostman.com/view/12757027/TzJsexHM).
+-   [API Endpoints for users to search for available courses](https://documenter.getpostman.com/view/12757027/TzJshJxY).
 -   Docker containerized app that runs per one command.
 -   Powerful authentication system using [JWT Auth](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/) and [cache](https://laravel.com/docs/cache) storage.
 -   [Robust front-end UI/UX using AlpineJS](https://github.com/alpinejs/alpine).
