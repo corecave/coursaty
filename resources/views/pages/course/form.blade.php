@@ -102,7 +102,7 @@
                                         name="category_id" id="category_id" placeholder="Selected Category"
                                         x-ref="selectedCategory" style="width:100%;">
                                         <option v-if="form.category" :value="form.category? form.category.id : ''"
-                                            selected="selected" x-text="form.category? form.category.name : ''"></option>
+                                            selected="selected" x-html="form.category? form.category.name : ''"></option>
                                     </select>
                                 </div>
                                 <div class="invalid-feedback" x-html="getErrors('category_id')">
