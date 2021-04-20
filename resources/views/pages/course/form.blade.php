@@ -11,12 +11,12 @@
                     <div class="card-body">
                         <form @submit.prevent="submit">
                             <div class="form-group row validated">
-                                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                <label for="title" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
                                     <input type="text"
-                                        :class="{'form-control': true, 'is-invalid': hasErrors('name') && isTouched('name')}"
-                                        id="name" name="name" placeholder="Name" x-model="form.name">
-                                    <div class="invalid-feedback" x-html="getErrors('name')">
+                                        :class="{'form-control': true, 'is-invalid': hasErrors('title') && isTouched('title')}"
+                                        id="title" name="title" placeholder="Title" x-model="form.title">
+                                    <div class="invalid-feedback" x-html="getErrors('title')">
                                     </div>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@
                                 <div class="col-sm-10">
                                     <input type="text"
                                         :class="{'form-control': true, 'is-invalid': hasErrors('author') && isTouched('author')}"
-                                        id="author" name="author" placeholder="Name" x-model="form.author">
+                                        id="author" name="author" placeholder="Author" x-model="form.author">
                                     <div class="invalid-feedback" x-html="getErrors('author')">
                                     </div>
                                 </div>

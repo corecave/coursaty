@@ -44,7 +44,7 @@ class CourseController extends Controller
      */
     public function store(CourseRequest $request)
     {
-        $record = $request->all();
+        $record = $request->validated();
 
         $course = Course::create($record);
 

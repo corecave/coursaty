@@ -15,7 +15,7 @@ class CourseRequest extends JsonFormRequest
     public function rules()
     {
         return [
-            'name' => ['required'],
+            'title' => ['required'],
             'author' => ['required'],
             'description' => ['nullable', 'max:2000'],
             'hours' => ['required', 'integer'],

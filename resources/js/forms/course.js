@@ -76,10 +76,10 @@ export default (course) => ({
 
             $container
                 .find(".select2-result-category__title")
-                .text(category.name);
+                .html(category.name);
             $container
                 .find(".select2-result-category__description")
-                .text(category.notes);
+                .html(category.notes);
 
             return $container;
         }
@@ -98,9 +98,9 @@ export default (course) => ({
 
     validate(field) {
         switch (field) {
-            case "name":
-                if (!this.form.name.trim()) {
-                    this.pushError("name", "Name is required.");
+            case "title":
+                if (!this.form.title.trim()) {
+                    this.pushError("title", "Title is required.");
                 }
 
                 break;
